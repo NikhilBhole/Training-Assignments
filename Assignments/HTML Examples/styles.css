@@ -1,0 +1,11 @@
+body {
+    background-color: tomato;
+}
+h1 {
+    color: seagreen;
+    font-family: fantasy;
+}
+p {
+    color: dodgerblue;
+    font-family: cursive;
+}
