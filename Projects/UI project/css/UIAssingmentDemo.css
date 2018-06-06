@@ -1,0 +1,153 @@
+.main{
+    
+    width: 1100px;
+    height: 500px;
+}
+
+body{
+    background-color: darkviolet;
+    margin-left: 100px;
+    margin-right: 200px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    position: relative;
+    font-family: "Poppins", sans-serif;
+    
+}
+.hero-area{
+    background-image: url("D:/yash documents/UI Assignment/img/header-bg.jpg"); 
+    height: 580px;
+}
+.container{
+    height: 200px;
+    opacity: 1.0;
+}
+.banner .one {   
+    text-align: center;    
+}
+.one a{
+     text-decoration: none;
+    color: white;
+}
+.best{
+    text-transform: uppercase;
+    color: white;
+    font-size: 20px;
+    font-weight: 100;
+    text-align: center;
+}
+.pe{
+    font-size: 7vw;
+    color: white;
+    text-align: center;
+}
+.logo{
+    float:left;
+}
+.main-menubar{
+    float:right;
+    color: white;
+    text-decoration: none;
+}
+.main-menubar .hide a{
+    color: white;
+    text-decoration: none;
+    margin-right: 20px
+}
+
+@media screen and (max-width:500px) {
+  .logo, .main-menubar {
+    width:100%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+}
+section{
+    background-color: white;
+    width: 1100px;
+    overflow: auto;
+}
+.row{
+   
+}
+.col-mda{
+    width: 500px;
+    float: left;
+    margin-right: 580px;
+    margin-left: 20px;
+    padding-top: 150px;
+}
+.feature-left h2{
+    color: lightgray;
+    font-size: 36px;
+    font-weight: 100;
+}
+.feature-left h2 span{
+    color: black;
+    font-weight: 600;
+}
+.feature-left p{
+    color: darkgray;
+}
+.col-mdb{
+    width: 500px;
+    float: right;
+}
+@media screen and (max-width:500px) {
+  .feature-left, .col-md-6 {
+    width:100%; 
+  }
+}
+.sliderbox{
+    position: relative;
+    width: 2500px;
+    animation-name: slideranimation;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+}
+.sliderbox img{
+}
+@keyframes slideranimation{
+    
+    0%{
+        left: 0px;
+    }
+    20%{
+        left: 0px;
+    }
+    25%{
+        left: -555px;
+    }
+    45%{
+        left: -555px;
+    }
+    50%{
+        left: -1110px;
+    }
+    70%{
+        left: -1110px;
+    }
+    75%{
+        left: -1665px;
+    }
+}
+.parallux-area{
+    height: 500px;
+    background-image: url("D:/yash documents/UI Assignment/img/parallux-bg.jpg");
+}
+.col{
+    width: 400px;
+    padding-top: 130px;
+    float: right;
+}
+.col h2{
+    color: white;
+    font-weight: 100;
+    font-size: 36px;
+}
+.col h2 span{
+    font-weight: 600;
+}
+.col p{
+    color: white;
+    margin-top: 30px;
+    margin-bottom: 25px;
+}
