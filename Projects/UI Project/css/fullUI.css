@@ -1,0 +1,286 @@
+body{
+    background-color: blueviolet;
+}
+.header
+{
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 100px;
+}
+
+.header
+{
+    font-family: serif;
+    color: white;
+}
+
+.header-started {
+    padding: 15px 25px;
+    font-size: 15px;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    background-color: blueviolet;
+    border: none;
+    border-radius: 40px;
+}
+.header-started:hover 
+{
+    background-color: darkviolet;
+}
+.second-section
+{
+    margin-left: 100px;
+    margin-right: 100px;
+    background-color: white;
+}
+
+.second-section-header
+{
+    font-family: serif;
+    font-size: 40px;
+}
+
+.second-section-started {
+    padding: 15px 25px;
+    font-size: 15px;
+    color: black;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    background-color: blueviolet;
+    border: none;
+    border-radius: 40px;
+}
+.second-section-started:hover 
+{
+    background-color: darkviolet;
+}
+.parallux-area{
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.paralluxcontainer{
+        width: 1000px;            
+        height: 600px;
+    }
+    .paralluxrow{
+        
+        width: 450px;
+        height: 300px;
+        padding-left: 20px;
+        margin-left: 670px;
+        
+    }
+    .paralluxcol{
+        
+        padding-top: 200px;
+    }
+    .paralluxcol h2{
+        color: white;
+        font-family: sans-serif;
+        
+    }
+    .paralluxcol h2 span{
+        color: white;
+        font-size: 36px;
+        font-weight: 600;
+    }
+    .paralluxcol p{
+        color: white;
+        font-family: sans-serif;
+    }
+    .parallux-area {
+        background-image: url("../img/parallux-bg.jpg");
+        min-height: 500px; 
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .paralluxbutton{
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+    }
+    .grid-images{
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+    .container{
+            background-color: white;
+            height: 900px;
+        }
+        .left1{
+            width: 45%;
+            position: static;
+            margin: 10px;
+            float: left;
+            height: 380px;
+            background-image: url("../img/s1.jpg");
+        }
+        .right1{
+            width: 47%;
+            position: static;
+            margin: 10px;
+            float: right;
+            height: 380px;
+            background-image: url("../img/s2.jpg");
+        }
+        .left2{
+            width: 45%;
+            position: static;
+            margin: 10px;
+            float: left;
+            height: 380px;
+            background-image: url("../img/s3.jpg");
+        }
+        .right2{
+            width: 47%;
+            position: static;
+            margin: 10px;
+            float: right;
+            height: 380px;
+            background-image: url("../img/s4.jpg");
+        }
+        .gridrow{
+            margin-top: 70px;
+        }
+        .overlay1, .overlay2, .overlay3, .overlay4 {
+            position: absolute;
+            bottom: 100%;
+            left: 0;
+            right: 0;
+            background-color: #008CBA;
+            overflow: hidden;
+            width: 100%;
+            height:0;
+            transition: .5s ease;
+        }
+        .container .gridrow .left1:hover .overlay1 {
+            
+            height: 100%;
+            position: static;
+            opacity: 0.6;
+        }
+        .container .gridrow .right1:hover .overlay2 {
+            
+            height: 100%;
+            position: static;
+            opacity: 0.6;
+        }
+        .container .gridrow .left2:hover .overlay3 {
+            
+            height: 100%;
+            position: static;
+            opacity: 0.6;
+        }
+        .container .gridrow .right2:hover .overlay4 {
+            
+            height: 100%;
+            position: static;
+            opacity: 0.6;
+        }
+        .text-uppercase{
+            text-transform: uppercase;
+            font-size: 20px;
+            color: white;
+            padding-left: 5px;
+        }
+        .paragraph{
+            color: white;
+            padding-left: 5px;
+        }
+        .message
+        {
+            margin-left: 100px;
+            margin-right: 100px;
+            background: url("../img/s2.jpg") no-repeat center/contain;
+            background-size: cover;
+        }
+        .msg-container
+        {
+            color: white;
+            text-align: center;
+        }
+
+        .msg-text
+        {
+            margin-left: 5px;
+            margin-right: 5px;
+            font-family: sans-serif;
+            font-size: 20px;
+            background-color: #ffffff;
+            border: 1px solid black;
+            opacity: 0.6;
+        }
+
+        .msg-get-started {
+            padding: 15px 25px;
+            font-size: 15px;
+            color: black;
+            text-align: center;
+            cursor: pointer;
+            outline: none;
+            background-color: white;
+            border: none;
+            border-radius: 40px;
+        }
+        .msg-get-started:hover 
+        {
+            background-color: blueviolet;
+        }
+        .newsletter
+        {
+            margin-left: 100px;
+            margin-right: 100px;
+            text-align: center;
+            padding-left: 25px;
+            padding-right: 25px;
+            width: 80%;
+            background-color: white;
+        }
+
+        .newsletter-top
+        {
+            font-family: sans-serif;
+            font-size: 30px;
+        }
+
+        .get-started {
+          padding: 15px 25px;
+          font-size: 15px;
+          text-align: center;
+          cursor: pointer;
+          outline: none;
+          color: #fff;
+          background-color: blueviolet;
+          border: none;
+          border-radius: 40px;
+        }
+
+        .get-started:hover 
+        {
+            background-color: darkviolet;
+        }
+
+        .news-text-box
+        {
+            font-size: 25px;
+        }
+        .footer
+        {
+            margin-left: 100px;
+            margin-right: 100px;
+            text-align: center;
+            background-color: black;
+            padding-left: 25px;
+            padding-right: 25px;
+            width: 80%;
+        }
+
+        .footer-menu,.copyright-text
+        {
+            color: white;
+        }

@@ -1,0 +1,225 @@
+.main{
+    
+    width: 1100px;
+    height: 500px;
+}
+
+body{
+    background-color: darkviolet;
+    margin-left: 100px;
+    margin-right: 200px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    position: relative;
+    font-family: "Poppins", sans-serif;
+    
+}
+.hero-area{
+    background-image: url("D:/yash documents/UI Assignment/img/header-bg.jpg"); 
+    height: 580px;
+}
+.container{
+    height: 200px;
+    opacity: 1.0;
+}
+.banner .one {   
+    text-align: center;    
+}
+.one a{
+     text-decoration: none;
+    color: white;
+}
+.best{
+    text-transform: uppercase;
+    color: white;
+    font-size: 20px;
+    font-weight: 100;
+    text-align: center;
+}
+.pe{
+    font-size: 7vw;
+    color: white;
+    text-align: center;
+}
+.logo{
+    float:left;
+}
+.main-menubar{
+    float:right;
+    color: white;
+    text-decoration: none;
+}
+.main-menubar .hide a{
+    color: white;
+    text-decoration: none;
+    margin-right: 20px
+}
+
+@media screen and (max-width:500px) {
+  .logo, .main-menubar {
+    width:100%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+}
+section{
+    background-color: white;
+    width: 1100px;
+    overflow: auto;
+}
+.row{
+   height: 700px;
+}
+.col-mda{
+    width: 40%;
+    float: left;
+    margin-left: 10px;
+    padding-top: 30px;
+    
+}
+.feature-left{
+    padding-right: 30px;
+}
+.feature-left h2{
+    color: lightgray;
+    font-size: 36px;
+    font-weight: 100;
+}
+.feature-left h2 span{
+    color: black;
+    font-weight: 600;
+}
+.feature-left p{
+    color: darkgray;
+}
+.col-mdb{
+    width: 45%;
+    float: right;
+    padding-right: 10px;
+    border: 1px solid black;
+}
+@media screen and (max-width:900px) {
+  .feature-left, .col-md-6 {
+    width:100%; 
+  }
+}
+.slide_img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding-right: 20px;
+}
+.slide_img img{
+    width: 50%;
+    height: 15%;
+    padding-right: 20px;
+}
+#i1, #i2, #i3{
+    display: none;
+}
+.pre, .nxt{
+    width: 12%;
+    height: 10%;
+    position: absolute;
+    top: 0;
+    background: rgba(88,88,88,0.4);
+    z-index: 99;
+    cursor: pointer;
+}
+.pre{
+    left: 0;
+}
+.nxt{
+    right: 0;
+}
+.nav{
+    width: 100%;
+    height: 11px;
+    position: absolute;
+    bottom: 12%;
+    text-align: center;
+    z-index: 99;
+}
+.dots{
+    top: -5px;
+    width: 18px;
+    height: 18px;
+    margin: 0 4px;
+    position: relative;
+    border-radius: 50%;
+    display: inline-block;
+    color: rgba(0,0,0,0.6);
+}
+.slide_img{
+    z-index: -1;
+}
+#i1:checked ~ #one, #i2:checked ~ #two, #i3:checked ~ #three{
+    z-index: 9;
+}
+#i1:checked ~ .nav #dot1, #i2:checked ~ .nav #dot2, #i3:checked ~ .nav #dot3{
+    background: white;
+} 
+
+.parallux-area{
+    height: 500px;
+    background-image: url("D:/yash documents/UI Assignment/img/parallux-bg.jpg");
+}
+.col{
+    width: 400px;
+    padding-top: 130px;
+    float: right;
+}
+.col h2{
+    color: white;
+    font-weight: 100;
+    font-size: 36px;
+}
+.col h2 span{
+    font-weight: 600;
+}
+.col p{
+    color: white;
+    margin-top: 30px;
+    margin-bottom: 25px;
+}
+.service-area .container{
+    height: 1100px;
+}
+.service-area .container .row{
+    display: grid;
+    grid-gap: 10px;
+    
+}
+.col-md-6 .single-service{
+    height: 350px;
+    width: 450px;
+}
+.overlay{
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    background-color: dodgerblue;
+    overflow: hidden;
+    width: 100%;
+    height:0;
+    transition: 0.4s ease;
+}
+.text-uppercase{
+    text-transform: uppercase;
+    color: white;
+    font-family: "Poppins", sans-serif;
+}
+.overlay p{
+    color: white;
+}
+.single-service:hover .overlay{
+    opacity: 0.6;
+    height: inherit;
+    bottom: 0;
+}
+.contact-area{
+    background-color: blueviolet;
+}
+.single-contact h2{
+    color: white;
+    text-align: center;
+}
