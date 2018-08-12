@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xmlns:mvc="http://www.springframework.org/schema/mvc"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans 
+    http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+    http://www.springframework.org/schema/mvc 
+    http://www.springframework.org/schema/mvc/spring-mvc-4.0.xsd
+    http://www.springframework.org/schema/context 
+    http://www.springframework.org/schema/context/spring-context-4.0.xsd">
+
+    <context:component-scan base-package="com.nikhil.controller" />
+    <mvc:annotation-driven/>
+    
+<mvc:interceptors>
+
+<mvc:interceptor>
+<mvc:mapping path="/admissionForm.html"/>
+<bean class="com.nikhil.controller.DayOfWeekBasedAccessInterceptor"/>
+</mvc:interceptor>
+
+<bean class="org.springframwork.web.servlet.i18n.LocalChangeInterceptor">
+<property name="paramName" value="siteLanguage"></property>
+</bean>
+
+</mvc:interceptors>   
+   
+<bean id="viewResolver" class="org.springframwork.web.servlet.view.InternalResourceViewResolver">
+<property name="prefix">
+<value>/WEB-INF/</value>
+</property>
+<property name="suffix">
+<value>.jsp</value>
+</property>
+</bean>
+
+<bean id="messageSource" class="org.springframwork.context.support.ReloadableResourceBundleMessageSource">
+<property name="basename" value="/WEB-INF/studentmessages"/>
+<property name="cacheseconds" value="1"/>
+</bean>
+
+<bean id="localeResolver" class="org.springframwork.web.servlet.i18n.CookieLocaleResolver"/>
+
+<bean id="simpleMappingExceptionResolver" class="org.springframwork.web.servlet.handler.SimpleMappingExceptionResolver">
+
+<property name="exceptionMapping">
+<map>
+<entry key="NullPointerException" value="NullPointerException"></entry>
+</map>
+</property>
+
+<property name="defaultErrorView" value="Exception"/>
+
+<property name="warnLogCategory" value="MVCLogger"/>
+
+</bean>
+
+
+</beans>
