@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Hibernate"/>
+	<classpathentry kind="lib" path="C:/Users/Nikhil/Documents/jar/hibernate jars/hibernate-release-4.1.2.Final/lib/required/hibernate-core-4.1.2.Final.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Nikhil/Documents/jar/jdbc-oracle.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
