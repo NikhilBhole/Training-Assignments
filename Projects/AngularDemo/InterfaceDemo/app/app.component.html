@@ -1,0 +1,27 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+  <table style="border: 1px solid black">
+    <thead>
+      <tr>
+        <td>ID</td>
+        <td>Name</td>
+        <td>Designation</td>
+      </tr>      
+    </thead>
+    <tbody>
+      <tr *ngFor='let employee of employees; trackBy:trackByEmployeeId'>
+        <td>{{ employee.id }}</td>
+        <td>{{ employee.name }}</td>
+        <td>{{ employee.designation }}</td>
+      </tr>
+    </tbody>
+  </table>
+  <button (click)='getEmployees()'>Refresh</button>
+
+</div>
+
+
+
