@@ -1,0 +1,16 @@
+table, tr, td{
+    border: 1px solid black;
+    width: 200px;
+   
+}
+table {
+    background-color: salmon;
+     
+}
+tr, td {
+    background-color: white;
+}
+thead td {
+    font-weight: bold;
+    background-color: yellow;
+}
