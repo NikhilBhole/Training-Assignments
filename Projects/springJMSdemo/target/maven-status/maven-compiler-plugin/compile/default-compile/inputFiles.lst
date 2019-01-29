@@ -1,0 +1,12 @@
+G:\STS_new_workspace\springJMSdemo\src\main\java\com\yash\service\MessageSenderService.java
+G:\STS_new_workspace\springJMSdemo\src\main\java\com\yash\serviceimpl\MessageSenderServiceImpl.java
+G:\STS_new_workspace\springJMSdemo\src\main\java\com\yash\dao\MessageSenderDao.java
+G:\STS_new_workspace\springJMSdemo\src\main\java\com\yash\controller\MessageController.java
+G:\STS_new_workspace\springJMSdemo\src\main\java\com\yash\model\MessageSender.java
+G:\STS_new_workspace\springJMSdemo\src\main\java\com\yash\model\MessageReciever.java
+G:\STS_new_workspace\springJMSdemo\src\main\java\com\yash\serviceimpl\MessageRecieverServiceImpl.java
+G:\STS_new_workspace\springJMSdemo\src\main\java\com\yash\daoimpl\MessageSenderDaoImpl.java
+G:\STS_new_workspace\springJMSdemo\src\main\java\com\yash\model\Message.java
+G:\STS_new_workspace\springJMSdemo\src\main\java\com\yash\service\MessageRecieverService.java
+G:\STS_new_workspace\springJMSdemo\src\main\java\com\yash\dao\MessageRecieverDao.java
+G:\STS_new_workspace\springJMSdemo\src\main\java\com\yash\daoimpl\MessageRecieverDaoImpl.java

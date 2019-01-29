@@ -1,0 +1,13 @@
+com\yash\model\Message.class
+com\yash\service\MessageSenderService.class
+com\yash\service\MessageRecieverService.class
+com\yash\daoimpl\MessageSenderDaoImpl.class
+com\yash\dao\MessageRecieverDao.class
+com\yash\serviceimpl\MessageSenderServiceImpl.class
+com\yash\controller\MessageController.class
+com\yash\serviceimpl\MessageSenderServiceImpl$1.class
+com\yash\model\MessageSender.class
+com\yash\serviceimpl\MessageRecieverServiceImpl.class
+com\yash\dao\MessageSenderDao.class
+com\yash\model\MessageReciever.class
+com\yash\daoimpl\MessageRecieverDaoImpl.class

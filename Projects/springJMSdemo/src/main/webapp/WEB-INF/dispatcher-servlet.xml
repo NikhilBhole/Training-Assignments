@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd
+        http://www.springframework.org/schema/tx 
+    	http://www.springframework.org/schema/tx/spring-tx.xsd
+        http://www.springframework.org/schema/mvc
+        http://www.springframework.org/schema/mvc/spring-mvc.xsd">
+
+	<!-- component scan -->
+	<context:component-scan
+		base-package="com.yash.controller" />
+	<context:component-scan
+		base-package="com.yash.daoimpl" />
+	<context:component-scan
+		base-package="com.yash.serviceimpl" />
+	<context:component-scan
+		base-package="com.yash.model" />
+
+	<!-- reading static resource like css, js or images <mvc:resources location="/static/css/" 
+		mapping="/static/**"/> -->
+
+	<!-- for annotations -->
+	<mvc:annotation-driven />
+
+	<bean id="connectionFactory"
+		class="org.apache.activemq.ActiveMQConnectionFactory">
+		<property name="brokerURL" value="tcp://localhost:61616" />
+	</bean>
+
+	<bean id="messageDestination"
+		class="org.apache.activemq.command.ActiveMQQueue">
+		<constructor-arg value="messageQueue1" />
+	</bean>
+
+	<bean id="jmsTemplate"
+		class="org.springframework.jms.core.JmsTemplate">
+		<property name="connectionFactory" ref="connectionFactory"></property>
+		<property name="receiveTimeout" value="10000"></property>
+	</bean>
+
+	<bean id="datasource"
+		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName"
+			value="com.mysql.jdbc.Driver" />
+		<property name="url" value="jdbc:mysql://localhost:3306/db" />
+		<property name="username" value="root" />
+		<property name="password" value="root" />
+	</bean>
+
+	<bean id="jdbcTemplate"
+		class="org.springframework.jdbc.core.JdbcTemplate">
+		<property name="dataSource" ref="datasource"></property>
+	</bean>
+
+	<bean id="sessionFactory"
+		class="org.springframework.orm.hibernate5.LocalSessionFactoryBean">
+		<property name="dataSource" ref="datasource"></property>
+		<property name="packagesToScan" value="com.yash.model"></property>
+
+		<property name="hibernateProperties">
+			<props>
+				<prop key="hibernate.dialect">org.hibernate.dialect.MySQL5Dialect</prop>
+				<prop key="hibernate.hbm2ddl.auto">update</prop>
+				<prop key="hibernate.show_sql">true</prop>
+			</props>
+
+		</property>
+	</bean>
+
+	<bean id="txManager"
+		class="org.springframework.orm.hibernate5.HibernateTransactionManager">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+
+	<!-- <tx:annotation-driven
+		transaction-manager="txManager" /> -->
+
+	<!-- for view resolver -->
+	<bean id="jspViewResolver"
+		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+
+		<property name="prefix" value="/WEB-INF/" />
+		<property name="suffix" value=".jsp" />
+	</bean>
+</beans>
